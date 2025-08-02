@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Site Vulnerável</title>
+  </head>
+  <body>
+    <h1>Bem-vindo!</h1>
+    <p>Digite seu nome:</p>
+    <input id="nome" type="text">
+    <button onclick="mostrar()">Entrar</button>
+    <p id="resposta"></p>
+
+    <script>
+      function mostrar() {
+        let nome = document.getElementById("nome").value;
+        document.getElementById("resposta").innerHTML = "Olá, " + nome;
+      }
+    </script>
+  </body>
+</html>
